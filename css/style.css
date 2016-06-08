@@ -2,37 +2,33 @@
 Global CSS
 --------------------------------------------------*/
 * {
-    box-sizing:border-box;
+	box-sizing: border-box;
 }
-.clear{clear:both;}
-
+.clear {
+	clear: both;
+}
 .swd_bg {
-    background: url(../resources/hero-01.jpg);
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	background: url(../resources/hero-01.jpg);
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-
-
 .swd_shadow {
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.22) 0%, rgba(61,61,61,0) 14%, rgba(19,19,19,0) 100%);
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(61,61,61,0) 21%, rgba(19,19,19,0) 100%);      /* IE 10 */
-    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(61,61,61,0) 21%, rgba(19,19,19,0) 100%);      /* Opera 11.10+ */
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(61,61,61,0) 21%, rgba(19,19,19,0) 100%);
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    z-index: 0;
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.22) 0%, rgba(61,61,61,0) 14%, rgba(19,19,19,0) 100%);
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(61,61,61,0) 21%, rgba(19,19,19,0) 100%);      /* IE 10 */
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(61,61,61,0) 21%, rgba(19,19,19,0) 100%);      /* Opera 11.10+ */
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(61,61,61,0) 21%, rgba(19,19,19,0) 100%);
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 0;
 }
-
 .container {
-    position: relative;
-    z-index: 2;
-    top: 0px;
+	position: relative;
+	z-index: 2;
+	top: 0px;
 }
-
-
 /*end: Global CSS
 --------------------------------------------------*/
 
@@ -44,50 +40,53 @@ Structure
 --------------------------------------------------*/
 
 .swd_bg {
-    float: left;
-    width: 100%;
-	}
-	
+	float: left;
+	width: 100%;
+}
 .logo {
-    float: left;
-    width: 230px;
-    margin: 40px;
+	float: left;
+	width: 230px;
+	margin: 40px;
 }
-
 .logo img {
-    width: 100%;
+	width: 100%;
 }
-
 .swd_head_text {
-    float: left;
-    width: 100%;
-    padding: 18% 9%;
-    text-align: left;
-    line-height: 70px;
+	float: left;
+	width: 100%;
+	padding: 18% 9%;
+	text-align: left;
+	line-height: 70px;
 }
-
 a.swd_button {
-    display: table;
-    color: #fff;
-    text-decoration: none;
-    margin: 40px auto 0px;
-    border: 2px solid #fff;
-    padding: 9px 75px 9px 25px;
-    font-size: 16px;
-    text-transform: uppercase;
-    border-radius: 60px;
-    position: relative;
-    font-weight:bold;
-    text-shadow: 0 1px 2px #333;
-    -moz-box-shadow: 0 0 4px #000;
-    -webkit-box-shadow: 0 0 4px#000;
-    box-shadow: 0 0 4px #000;
+	display: table;
+	color: #fff;
+	text-decoration: none;
+	margin: 40px auto 0px;
+	border: 2px solid #fff;
+	padding: 9px 75px 9px 25px;
+	font-size: 16px;
+	text-transform: uppercase;
+	border-radius: 60px;
+	position: relative;
+	font-weight: bold;
+	text-shadow: 0 1px 2px #333;
+	-moz-box-shadow: 0 0 4px #000;
+	-webkit-box-shadow: 0 0 4px#000;
+	box-shadow: 0 0 4px #000;
 }
-
-a.swd_button:after {content: "";width: 2px;height: 100%;position: absolute;background: rgba(255,255,255,0.5);right: 51px;top: 0px;}
+a.swd_button:after {
+	content: "";
+	width: 2px;
+	height: 100%;
+	position: absolute;
+	background: rgba(255,255,255,0.5);
+	right: 51px;
+	top: 0px;
+}
 a.swd_button:before {
 	content: "";
-	background:url(../Resources/Player.png);
+	background: url(../Resources/Player.png);
 	height: 100%;
 	width: 21px;
 	background-size: 100%;
@@ -107,9 +106,9 @@ a.swd_button:before {
 /*--------------------------------------------------
 Colors
 --------------------------------------------------*/
-.swd_head_text{
-    color: #FFFFFF;}
-
+.swd_head_text {
+	color: #FFFFFF;
+}
 /*end: Colors
 --------------------------------------------------*/
 
@@ -120,17 +119,15 @@ Colors
 Fonts & Typography
 --------------------------------------------------*/
 
-.swd_head_text, a.swd_button{
-font-family: "Archivo Black";
+.swd_head_text, a.swd_button {
+	font-family: "Archivo Black";
 }
- .swd_head_text{
-    font-size: 65px;
-    text-shadow: 0px 1px 4px rgba(0,0,0,0.50);
-    font-weight: 900;
-    line-height: 80px;
-    /* letter-spacing: 1.5px; */
+.swd_head_text {
+	font-size: 65px;
+	text-shadow: 0px 1px 4px rgba(0,0,0,0.50);
+	font-weight: 900;
+	line-height: 80px;/* letter-spacing: 1.5px; */
 }
-
 
 /*end: Fonts & Typography
 --------------------------------------------------*/
@@ -142,20 +139,17 @@ Media Queries
 
 /*If screen is bigger than 500*/
 @media screen and (min-width: 500px) {
-
 }
 
 /*If screen is smaller than 500*/
 @media screen and (max-width: 500px) {
-
 .swd_head_text {
-    font-size: 46px;
-    line-height: 48px;
+	font-size: 46px;
+	line-height: 48px;
 }
-
 .logo {
-    width: 179px;
-    margin: 25px;
+	width: 179px;
+	margin: 25px;
 }
 }
 
