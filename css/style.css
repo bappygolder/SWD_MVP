@@ -46,7 +46,7 @@ Structure
 .logo {
 	float: left;
 	width: 230px;
-	margin: 40px;
+	margin: 40px 5%;
 }
 .logo img {
 	width: 100%;
@@ -54,15 +54,15 @@ Structure
 .swd_head_text {
 	float: left;
 	width: 100%;
-	padding: 18% 9%;
-	text-align: left;
+    padding: 11% 5%;
+    text-align: left;
 	line-height: 70px;
 }
 a.swd_button {
 	display: table;
 	color: #fff;
 	text-decoration: none;
-	margin: 40px auto 0px;
+	margin: 40px 5% 0px;
 	border: 2px solid #fff;
 	padding: 9px 75px 9px 25px;
 	font-size: 16px;
@@ -74,6 +74,7 @@ a.swd_button {
 	-moz-box-shadow: 0 0 4px #000;
 	-webkit-box-shadow: 0 0 4px#000;
 	box-shadow: 0 0 4px #000;
+	float: left;
 }
 a.swd_button:after {
 	content: "";
@@ -123,10 +124,10 @@ Fonts & Typography
 	font-family: "Archivo Black";
 }
 .swd_head_text {
-	font-size: 65px;
+	font-size: 48px;
 	text-shadow: 0px 1px 4px rgba(0,0,0,0.50);
 	font-weight: 900;
-	line-height: 80px;/* letter-spacing: 1.5px; */
+	line-height: 52px;/* letter-spacing: 1.5px; */
 }
 
 /*end: Fonts & Typography
@@ -137,8 +138,32 @@ Fonts & Typography
 Media Queries
 --------------------------------------------------*/
 
-/*If screen is bigger than 500*/
-@media screen and (min-width: 500px) {
+/*If screen is bigger than 1000*/
+@media screen and (min-width: 1000px) {
+.swd_head_text {
+	    font-size: 47px;
+    line-height: 70px;
+}
+
+a.swd_button {
+	padding: 15px 85px 15px 35px;
+	font-size: 23px;
+	}
+.swd_button:before {
+    width: 32px;
+    right: 19px;
+    top: 3px;
+}
+
+a.swd_button:after {
+    height: 100%;
+    right: 67px;
+    top: 0px;
+}
+.swd_head_text br:nth-child(1),.swd_head_text br:nth-child(2) {
+    display: none;
+}
+
 }
 
 /*If screen is smaller than 500*/
@@ -151,6 +176,13 @@ Media Queries
 	width: 179px;
 	margin: 25px;
 }
+a.swd_button {
+	float: none;
+margin:40px auto 0px;
+}
+.swd_head_text {
+    padding: 45px 5%;
+ }
 }
 
 /*end: Media Queries
