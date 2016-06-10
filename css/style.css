@@ -75,21 +75,25 @@ Structure
 
 a.swd_button {
 	display: table;
-	color: #fff;
-	text-decoration: none;
-	margin: 40px 5% 0px;
+	/*margin: 40px 5% 0px;*/
+	margin-left: 18px;	
 	border: 2px solid #fff;
 	padding: 9px 75px 9px 25px;
-	font-size: 16px;
-	text-transform: uppercase;
-	border-radius: 60px;
 	position: relative;
-	font-weight: bold;
+	float: left;
+	border-radius: 60px;
+
+
 	text-shadow: 0 1px 2px #333;
 	-moz-box-shadow: 0 0 4px #000;
 	-webkit-box-shadow: 0 0 4px#000;
 	box-shadow: 0 0 4px #000;
-	float: left;
+
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;	
+	font-size: 16px;
+	color: #fff;
 }
 
 a.swd_button:after {
@@ -158,7 +162,7 @@ Media Queries
 --------------------------------------------------*/
 /*If screen is bigger than 350px*/
 @media screen and (min-width: 350px) {
-	.swd_head_text {
+	.main_content {
 		padding: 14% 16% 0;	
 	}
 }
@@ -198,17 +202,17 @@ a.swd_button:after {
 
 	}
 	a.swd_button {
-		float: none;
-		margin:40px auto 0px;
+/*		float: none;
+		margin:40px auto 0px;*/
 	}
 
 }
 
 /*If screen is larger than 500*/
 @media screen and (min-width: 501px) {
-.swd_head_text {
+/*.swd_head_text {
     padding: 2% 5%;
-}
+}*/
 }
 
 /*If screen is larger than 351*/
