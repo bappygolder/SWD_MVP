@@ -82,18 +82,6 @@ a.swd_button {
 	position: relative;
 	float: left;
 	border-radius: 60px;
-
-
-	text-shadow: 0 1px 2px #333;
-	-moz-box-shadow: 0 0 4px #000;
-	-webkit-box-shadow: 0 0 4px#000;
-	box-shadow: 0 0 4px #000;
-
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: bold;	
-	font-size: 16px;
-	color: #fff;
 }
 
 a.swd_button:after {
@@ -150,7 +138,35 @@ a.swd_button {
 	line-height: 52px;/* letter-spacing: 1.5px; */
 }
 
-.logo h1 {margin:0 !important;padding:0;text-indent:-1000px;line-height:0;}
+a.swd_button {
+	display: table;
+	/*margin: 40px 5% 0px;*/
+	margin-left: 18px;	
+	border: 2px solid #fff;
+	padding: 9px 75px 9px 25px;
+	position: relative;
+	float: left;
+	border-radius: 60px;
+
+
+	text-shadow: 0 1px 2px #333;
+	-moz-box-shadow: 0 0 4px #000;
+	-webkit-box-shadow: 0 0 4px#000;
+	box-shadow: 0 0 4px #000;
+
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;	
+	font-size: 16px;
+	color: #fff;
+}
+
+.logo h1 {
+	margin:0 !important;
+	padding:0;
+	text-indent:-1000px;l
+	ine-height:0;
+}
 /*end: Fonts & Typography
 --------------------------------------------------*/
 
