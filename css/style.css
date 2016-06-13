@@ -10,7 +10,7 @@ Global CSS
 .swd_bg {
 	background: url(../resources/hero-01.jpg);
 	height: 100vh;
-	background-position: center;
+	background-position: center;	
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -32,11 +32,6 @@ Global CSS
 	height: 100vh;
 	z-index: 0;
 }
-.container {
-	position: relative;
-	z-index: 2;
-	top: 0px;
-}
 /*end: Global CSS
 --------------------------------------------------*/
 
@@ -52,22 +47,31 @@ Structure
 	width: 100%;
 }
 
+.container {
+    padding: 5%;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
 .logo {
 	float: left;
 	width: 179px;
-	margin: 25px;
-/*	width: 230px;
+ /* margin: 25px 0 0 25px;
+	width: 230px;
 	margin: 40px 5%;*/
 }
 
 .logo img {
-	width: 100%;
+	width: 70%;
 }
 
 .swd_head_text {
 	float: left;
 	width: 100%;
-    padding: 11% 5%;
+/*    padding: 11% 5%;*/
     text-align: left;
 	line-height: 70px;
     padding: 50px 5% 20px;
@@ -174,6 +178,43 @@ a.swd_button {
 /*--------------------------------------------------
 Media Queries
 --------------------------------------------------*/
+/*body wrapper
+controls the overall 
+--------------------*/
+
+
+/*logo
+--------------------*/
+/*If screen is bigger than given size below*/
+/*@media screen and (min-width: 750px) {
+	.logo {
+		margin: 50px 0 0 50px;
+	}	
+}*/
+
+/*If screen is bigger than given size below*/
+@media screen and (min-width: 450px) {
+	.logo img {
+		width: 80%;
+	}
+}
+
+/*If screen is bigger than given size below*/
+@media screen and (min-width: 1000px) {
+	.logo img {
+		width: 90%;
+	}
+}
+
+/*If screen is bigger than given size below*/
+@media screen and (min-width: 1400px) {
+	.logo img {
+		width: 320%;
+	}
+}
+/*end: logo
+--------------------*/
+
 /*If screen is bigger than 350px*/
 @media screen and (min-width: 350px) {
 	.main_content {
