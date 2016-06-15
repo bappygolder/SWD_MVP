@@ -69,18 +69,15 @@ Structure
 }
 
 .swd_head_text {
+	margin:0; /*removing default margin*/
 	float: left;
 	width: 100%;
-/*    padding: 11% 5%;*/
     text-align: left;
 	line-height: 70px;
     padding: 50px 5% 20px;
 }
 
 a.swd_button {
-	display: table;
-	/*margin: 40px 5% 0px;*/
-	margin-left: 18px;	
 	border: 2px solid #fff;
 	padding: 9px 75px 9px 25px;
 	position: relative;
@@ -135,16 +132,12 @@ a.swd_button {
 }
 .swd_head_text {
 	font-size: 280%;
-	line-height: 65px;
 	text-shadow: 0px 1px 4px rgba(0,0,0,0.50);
 	font-weight: 900;
-	margin:0px;
-	line-height: 52px;/* letter-spacing: 1.5px; */
+	line-height: 52px; /* letter-spacing: 1.5px; */
 }
 
 a.swd_button {
-	display: table;
-	/*margin: 40px 5% 0px;*/
 	margin-left: 18px;	
 	border: 2px solid #fff;
 	padding: 9px 75px 9px 25px;
@@ -166,7 +159,7 @@ a.swd_button {
 }
 
 .logo h1 {
-	margin:0 !important;
+	/*margin:0 !important;*/
 	padding:0;
 	text-indent:-1000px;l
 	ine-height:0;
@@ -183,15 +176,32 @@ controls the overall
 --------------------*/
 
 
-/*logo
+/*common MQ
 --------------------*/
 /*If screen is bigger than given size below*/
-/*@media screen and (min-width: 750px) {
-	.logo {
-		margin: 50px 0 0 50px;
+@media screen and (min-width: 380px) {
+	.swd_head_text{
+		padding: 32px 0 20px;	
+	}
+	
+	.main_content{
+		width: 100%;
+		padding-left: 50px;
+	}	
+}
+
+/*If screen is bigger than given size below*/
+/*@media screen and (min-width: 500px) {
+	a.swd_button {
+		margin: 16px 0 0 0;
 	}	
 }*/
+/*end: common MQ
+--------------------*/
 
+
+/*logo
+--------------------*/
 /*If screen is bigger than given size below*/
 @media screen and (min-width: 450px) {
 	.logo img {
@@ -209,77 +219,92 @@ controls the overall
 /*If screen is bigger than given size below*/
 @media screen and (min-width: 1400px) {
 	.logo img {
-		width: 320%;
+		width: 100%;
 	}
 }
 /*end: logo
 --------------------*/
 
-/*If screen is bigger than 350px*/
-@media screen and (min-width: 350px) {
-	.main_content {
-		padding: 14% 16% 0;	
+
+/*main message
+--------------------*/
+/*If screen is bigger than given size below*/
+@media screen and (min-width: 750px) {
+	.swd_head_text{
+		padding: 0;
+    	font-size: 410%;
+		line-height: 77px
 	}
 }
+
+/*If screen is bigger than given size below*/
+@media screen and (min-width: 900px) {
+	.swd_head_text{
+		padding: 5% 0 0 0;	
+	}
+}
+
+/*If screen is bigger than given size below*/
+@media screen and (min-width: 1050px) {
+	.swd_head_text{
+		font-size: 500%;
+		line-height: 96px;
+		margin: 0;	
+		padding: 2% 0 0 0;	
+	}
+}
+
+/*end: main message
+--------------------*/
+
+
+
+/* button
+--------------------*/
+/*If screen is bigger than given size below*/
+@media screen and (min-width: 380px) {
+	a.swd_button{
+		margin-left: 0px;	
+	}
+}
+
+@media screen and (min-width: 750px) {
+	a.swd_button{
+		margin-top: 32px;	
+	}
+}
+
+/*end: call to action
+--------------------*/
+
+
+
+
 
 
 /*If screen is bigger than 1000*/
 @media screen and (min-width: 1000px) {
-.swd_head_text {
-	font-size: 47px;
-    line-height: 70px;
-}
 
-a.swd_button {
-     padding: 14px 85px 14px 35px;
-    font-size: 14px;
-	}
-.swd_button:before {
-    width: 32px;
-    right: 23%;
-    top: 3px;
-}
-
-a.swd_button:after {
-    height: 100%;
-	right: 50px;
-    top: 0px;
-}
-.swd_head_text br:nth-child(1),.swd_head_text br:nth-child(2) {
-    display: none;
-}
-
-}
-
-/*If screen is smaller than 500*/
-@media screen and (max-width: 500px) {
-	.logo {
-
-	}
 	a.swd_button {
-/*		float: none;
-		margin:40px auto 0px;*/
+		padding: 14px 85px 14px 35px;
+		font-size: 14px;
 	}
-
-}
-
-/*If screen is larger than 500*/
-@media screen and (min-width: 501px) {
-/*.swd_head_text {
-    padding: 2% 5%;
-}*/
-}
-
-/*If screen is larger than 351*/
-@media screen and (min-width: 351px) {
-	.swd_head_text br:nth-child(1),
-	.swd_head_text br:nth-child(2) {
+		
+	.swd_button:before {
+		width: 32px;
+		right: 23%;
+		top: 3px;
+	}
+	
+	a.swd_button:after {
+		height: 100%;
+		right: 50px;
+		top: 0px;
+	}
+	/*.swd_head_text br:nth-child(1),.swd_head_text br:nth-child(2) {
 		display: none;
-	}
-	a.swd_button {
-		float:left;
-		margin-left:5%;
-	}
+	}*/
+
 }
 
 /*end: Media Queries
